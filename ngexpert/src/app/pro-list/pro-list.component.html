@@ -1,0 +1,10 @@
+<p>pro-list works!</p>
+<h2>{{dataReceived  | json}}</h2>
+
+
+<app-pro
+[label]="arraynum"
+[profile]="arraydet"
+
+(configUpdated)="receivedChildData($event)"
+></app-pro> 
