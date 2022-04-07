@@ -12,6 +12,11 @@ import { ServicesComponent } from './components/services/services.component';
 import { ListContactComponent } from './components/list-contact/list-contact.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
+import { AddressComponent } from './components/address/address.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './components/login/login.component';
+import { RegistrationComponent } from './components/registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +29,16 @@ import { HomeComponent } from './home/home.component';
     ServicesComponent,
     ListContactComponent,
     NotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    AddressComponent,
+    ContactFormComponent,
+    LoginComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
