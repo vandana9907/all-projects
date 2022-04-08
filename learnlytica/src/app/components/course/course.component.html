@@ -1,16 +1,22 @@
-<p>course works!</p>
-<h4 >Devops</h4>
-<div class="row">
-    <div class="card" style="width: 20rem;">
-        <img src="https://dz8fbjd9gwp2s.cloudfront.net/courses/61aa18860cf26833c8eca46c/61aa18860cf26833c8eca46c_scaled_cover.jpg?v=1"
-            class="card-img-top" alt="...">
-        <div class="card-body">
-            <p class="card-text">Git has a devops Tool</p>
-            <p class="card-text">Leranlytica </p>
-            <p class="card-text">$599</p>
-
-        </div>
+<div class="card">
+    <img [src]="imgUrl" class="card-img-top" alt="...">
+     <!-- class="card-img-top" alt="..."> -->
+    <div class="card-body">
+        <h5 class="card-title">{{configs['spayee:title'] |uppercase}} -MRP <span>{{configs['spayee:price']}}</span></h5>
+        <!-- <div class="card-body"> -->
+        <span><b>course Date: </b> {{courseDate|date:'MM/dd/y'}} </span>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+             <!-- <p class="card-text">Leranlytica </p>
+            <p class="card-text">$599</p> -->
+        <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
+</div>
+
+
+
+<!-- <p>course works!</p> -->
+<!-- <h4 >Devops</h4>
 
     <div class="card" style="width: 20rem;">
 
@@ -92,7 +98,7 @@
             <p class="card-text">$99</p>
     
         </div>
-    </div>
+    </div> -->
 
 
 
@@ -100,7 +106,7 @@
 
 
 
-    <div class="card" style="width: 20rem;">
+<!-- <div class="card" style="width: 20rem;">
     
         <img src="https://dz8fbjd9gwp2s.cloudfront.net/courses/61af23880cf29556db81488e/61af23880cf29556db81488e_scaled_cover.jpg?v=1"
             class="card-img-top" alt="...">
@@ -109,7 +115,6 @@
             <p class="card-text">Leranlytica </p>
             <p class="card-text">$99</p>
     
-        </div>
-    </div>
-</div>
-    
+        </div> -->
+<!-- </div> --> -->
+<!-- </div> -->
