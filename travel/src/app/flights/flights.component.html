@@ -1,0 +1,277 @@
+<p>flights works!</p>
+<div class="border">
+    <div class="card" style="width: 50rem;">
+
+
+        <div class="card-body">
+            <p class="card-text"></p>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    FROM
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="mumbai">Mumbai,India</a></li>
+                    <li><a class="dropdown-item" href="Delhi">Delhi,India</a></li>
+                    <li><a class="dropdown-item" href="Bangalore">Bangalore,India</a></li>
+                </ul>
+            </div>
+        </div>
+        <h4>Delhi </h4>
+        <p class="card-text">DEL,Delhi Airport India</p>
+
+    </div>
+</div>
+<br>
+<br>
+
+<div class="card mb-3" style="max-width: 1200px; height: 250px;">
+    <div class="row">
+        <div *ngFor="let myele of flights" class="card col m-5 p-2">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="{{myele.image}}" class="img-fluid rounded-start" alt="...">
+                    <p class="card-text"><small class="text-muted">{{myele.Title}}</small></p>
+
+                </div>
+
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text"><small class="text-muted">{{myele.Heading}}</small></p>
+                        <h5 class="card-title">{{myele.Content}}</h5>
+                        <p class="card-text">{{myele.Paragraph}}</p>
+                        <div class="d-inline p-2 bg-primary white">{{myele.Line}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card mb-3" style="max-width: 1200px;">
+
+    <div class="row">
+        <div *ngFor="let myele of Flight" class="card col m-5 p-2">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="{{myele.image}}">
+                    <p class="card-text"><small class="text-muted">{{myele.Title}}</small></p>
+
+                </div>
+
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text"><small class="text-muted">{{myele.Heading}}</small></p>
+                        <h5 class="card-title">{{myele.Content}}</h5>
+                        <p class="card-text">{{myele.Paragraph}}</p>
+                        <div class="d-inline p-2 bg-primary white">{{myele.Line}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="border">
+
+    <img src="http://promos.makemytrip.com/images/50x50-Other-23052019.png" class="rounded-circle" alt="...">
+    <h5 class="card-title">Chennai Flights</h5>
+    <p class="card-text"><small class="text-muted">Via-Delhi,Mumbai,Coimbatore,Madurai
+        </small></p>
+
+    <img src="http://promos.makemytrip.com/images/50x50-Ooty-23052019.png" class="rounded-circle" alt="...">
+    <h5 class="card-title">Hyderabad Flights</h5>
+    <p class="card-text"><small class="text-muted">Via-Chennai,Mumbai,Bangalore,Delhi
+        </small></p>
+
+    <img src="https://promos.makemytrip.com/store/SingaporeDT.JPG" class="rounded-circle" alt="...">
+    <h5 class="card-title">Kolkata Flights</h5>
+    <p class="card-text"><small class="text-muted">Via-Chennai,Mumbai,Bangalore,Delhi
+        </small></p>
+        
+    <img src="https://promos.makemytrip.com/store/GoaDT.JPG" class="rounded-circle" alt="...">
+    <h5 class="card-title">Goa Flights</h5>
+    <p class="card-text"><small class="text-muted">Via-Delhi,Mumbai,Ahmedabed,Bangalore,
+        </small></p>
+   
+    <img src="https://promos.makemytrip.com/store/DelhiDT.JPG" class="rounded-circle" alt="...">
+    <h5 class="card-title">Delhi Flights</h5>
+    <p class="card-text"><small class="text-muted">Via-Mumbai,Pune,Bangalore, Chennai
+        </small></p>
+
+    <img src="https://promos.makemytrip.com/store/BangaloreDT.JPG" class="rounded-circle" alt="...">
+    <h5 class="card-title">Delhi Flights</h5>
+    <p class="card-text"><small class="text-muted">Via-Delhi,Pune,Mumbai,Kolkata
+        </small></p>
+
+    <img src="https://promos.makemytrip.com/store/MumbaiDT.JPG" class="rounded-circle" alt="...">
+    <h5 class="card-title">Mumbai Flights</h5>
+    <p class="card-text"><small class="text-muted">Via-Delhi,Bangalore,Chennai,Ahmedabed</small>
+    </p>
+    <img src="https://promos.makemytrip.com/store/PuneDT.JPG" class="rounded-circle" alt="...">
+    <h5 class="card-title">pune Flights</h5>
+    <p class="card-text"><small class="text-muted">Via-Delhi,Bangalore,Chennai,Ahmedabed
+        </small></p>
+
+        
+    <img src="https://promos.makemytrip.com/store/JaipurDT.JPG" class="rounded-circle" alt="...">
+    <h5 class="card-title">Jaipur Flights</h5>
+    <p class="card-text"><small class="text-muted">Via-Delhi,Pune,Mumbai,Bangalore
+        </small></p>
+
+
+
+
+
+
+
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="border">
+
+    <div class="row">
+        <div class="card mb-3" style="max-width: 100;">
+            <div class="row g-0">
+                <div *ngFor="let myele of flights" class="card col m-5 p-2">
+                    <div class="col-md-4">
+                        <img src="{{myele.image}}" hight="40px" width="180">
+                    </div>
+                    <p class="card-text"><small class="text-muted">{{myele.Title}}</small></p>
+
+                    <div class="col-md-8">
+                        <div class="card-body">
+
+                            <p class="card-text"><small class="text-muted">{{myele.Heading}}</small></p>
+                            <h5 class="card-title">{{myele.Content}}</h5>
+
+                            <p class="card-text"><small class="text-muted">{{myele.Paragraph}}</small></p>
+                            <div class="d-inline  p-2 bg-primary white">{{myele.Line}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-1"></div>
+        <div class="row">
+            <div class="card mb-3" style="max-width: 100;">
+                <div class="row g-0">
+                    <div *ngFor="let myele of Flight" class="card col m-5 p-2">
+                        <div class="col-md-4">
+                            <img src="{{myele.image}}" hight="40px" width="180">
+                        </div>
+                        <p class="card-text"><small class="text-muted">{{myele.Title}}</small></p>
+
+                        <div class="col-md-8">
+                            <div class="card-body">
+
+                                <p class="card-text"><small class="text-muted">{{myele.Heading}}</small></p>
+                                <h5 class="card-title">{{myele.Content}}</h5>
+
+                                <p class="card-text"><small class="text-muted">{{myele.Paragraph}}</small></p>
+                                <div class="d-inline  p-2 bg-primary white">{{myele.Line}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://promos.makemytrip.com/store//116x116-Desktop-NE.jpg" hight="40px" width="180">
+                        <p class="card-text"><small class="text-muted">T&C's Apply</small></p>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text"><small class="text-muted">HOLIDAYS </small></p>
+                            <h5 class="card-title">Plan a Summer Break in Ladakh!</h5>
+
+                            <p class="card-text"><small class="text-muted">Holidays Packages to Nubra Valley & more
+                                    start@just $21.999*!
+                                </small></p>
+                            <div class="d-inline  p-2 bg-primary white">Book Now</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://promos.makemytrip.com/notification/xhdpi//gsts-116x116-06042022.jpg"
+                                hight="40px" width="180">
+                            <p class="card-text"><small class="text-muted">T&C's Apply</small></p>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p class="card-text"><small class="text-muted">INTL FLIGHTS </small></p>
+                                <h5 class="card-title">Up to Rs.4,500 OFF* on Flights to Middle East Asi...</h5>
+
+                                <p class="card-text"><small class="text-muted">Book your summer trip with the Great
+                                        Summer Travel Sale.
+                                    </small></p>
+                                <div class="d-inline  p-2 bg-primary white">Book Now</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://promos.makemytrip.com/notification/xhdpi//Amex-116x116-17082021.jpg"
+                                    hight="40px" width="180">
+                                <p class="card-text"><small class="text-muted">T&C's Apply</small></p>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <p class="card-text"><small class="text-muted">DOM FLIGHTS </small></p>
+                                    <h5 class="card-title">Grab FLAT 15% Instant Discounts* on Domestic Flight...</h5>
+
+                                    <p class="card-text"><small class="text-muted">Valid on American Express Cards
+                                        </small></p>
+                                    <div class="d-inline  p-2 bg-primary white">View Details</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div> -->
