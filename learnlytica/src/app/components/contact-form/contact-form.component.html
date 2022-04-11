@@ -36,15 +36,15 @@
 
         <div class="form-group">
             <label>Email</label>
-            <input formControlName="email_thbs" type="email" class="form-control">
+            <input formControlName="email_travel" type="email" class="form-control">
 
             <div class="text-danger" *ngIf="myform.controls['email_travel'].touched 
        && myform.controls['email_travel'].invalid">
-       <p *ngIf="myform.controls['email_thbs'].errors?.['required']">Email is required</p>
-       <p *ngIf="myform.controls['email_thbs'].errors?.['email']">Please enter valid email</p>
-       <p *ngIf="myform.controls['email_thbs'].errors?.['minlength']">Email min length should 5 char</p>
-       
-</div>
+                <p *ngIf="myform.controls['email_travel'].errors?.['required']">Email is required</p>
+                <p *ngIf="myform.controls['email_travel'].errors?.['email']">Please enter valid email</p>
+                <p *ngIf="myform.controls['email_travel'].errors?.['minlength']">Email min length should 5 char</p>
+
+            </div>
         </div>
 
         <div class="form-group">
@@ -52,20 +52,21 @@
             <input formControlNam="password" type="password" class="form-control">
         </div>
 
-        
 
-            <div class="form-group">
-                <label>Language</label>
-                <select formControlName="lang" class="form-control">
-                    <option value="">Please select a language</option>
-                    <option [value]="lang" *ngFor="let lang of lang">{{lang}}</option>
-                </select>
-            </div>
-    
-            <div class="form-group m-5">
-    
-                <button  class="btn btn-primary" (click)="getValues()">Submit</button>
-            </div>
-        </form>
-    
-    </div>
+
+        <div class="form-group">
+            <label>Language</label>
+            <select formControlName="languages" class="form-control">
+                <option value="">Please select a language</option>
+                <option [value]="lang" *ngFor="let lang of languages">{{lang}}</option>
+            </select>
+        </div>
+
+        <div class="form-group m-5">
+           
+            <button class="btn btn-primary" (click)="getValues()">Submit</button>
+            <button mat-button mat-dialog-close>Cancle</button>
+        </div>
+    </form>
+
+</div>

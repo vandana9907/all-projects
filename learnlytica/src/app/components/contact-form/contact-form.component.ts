@@ -8,32 +8,32 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./contact-form.component.css']
 })
 export class ContactFormComponent implements OnInit {
-  lang =['ENG','TELUGU','KANADA'];
-  myform: FormGroup = new FormGroup (
+  languages = ['ENG', 'TELUGU', 'KANADA'];
+  myform: FormGroup = new FormGroup(
     {
-  fname: new FormControl('',Validators.required),
-  lname: new FormControl('',Validators.required),
-  email_travel: new FormControl('',
-  [Validators.required,
-  Validators.email,
-  Validators.minLength(5),
-  
-    ]
-    ),
-  password: new FormControl('',[Validators.required ,Validators.minLength(5),Validators.maxLength(6)]),
- 
-  
-  languages: new FormControl('',)
+      fname: new FormControl('', Validators.required),
+      lname: new FormControl('', Validators.required),
+      email_travel: new FormControl('',
+        [Validators.required,
+        Validators.email,
+        Validators.minLength(5),
+
+        ]
+      ),
+      password: new FormControl('', [Validators.required, Validators.minLength(5), Validators.maxLength(6)]),
+
+
+      languages: new FormControl('',)
     }
   );
-  
+
 
 
   constructor() { }
 
   ngOnInit(): void {
   }
-getValues() {
-  console.log(this.myform);
-}
+  getValues() {
+    console.log(this.myform);
+  }
 }
