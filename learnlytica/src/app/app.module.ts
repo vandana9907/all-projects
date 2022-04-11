@@ -22,6 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSliderModule } from '@angular/material/slider';
 import { SignupComponent } from './components/signup/signup.component';
 import { MatDialogModule } from '@angular/material/dialog';
+
+import { MaterialModule } from './material/material.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +40,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     ContactFormComponent,
     LoginComponent,
     RegistrationComponent,
-    SignupComponent
+    SignupComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -48,6 +51,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     BrowserAnimationsModule,
     MatSliderModule,
     MatDialogModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
