@@ -25,7 +25,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class ListProfilsComponent implements OnInit {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  dataSource = ELEMENT_DATA;
+  vandanaSource = ELEMENT_DATA;
   constructor() { }
   
 
