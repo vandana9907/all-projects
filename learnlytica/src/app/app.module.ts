@@ -24,6 +24,7 @@ import { SignupComponent } from './components/signup/signup.component';
 import { MatDialogModule } from '@angular/material/dialog';
 
 import { MaterialModule } from './material/material.module';
+import { ReactiveComponent } from './components/reactive/reactive.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +42,7 @@ import { MaterialModule } from './material/material.module';
     LoginComponent,
     RegistrationComponent,
     SignupComponent,
+    ReactiveComponent,
     
   ],
   imports: [
