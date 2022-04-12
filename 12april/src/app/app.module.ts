@@ -20,7 +20,10 @@ import { DetailProfileComponent } from './components/detail-profile/detail-profi
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ListProfileComponent,
+    DetailProfileComponent
+
   ],
   providers: [],
   bootstrap: [AppComponent]
