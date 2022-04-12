@@ -6,23 +6,23 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ListProfileComponent } from './components/list-profile/list-profile.component';
-import { DetailProfileComponent } from './components/detail-profile/detail-profile.component';
+// import { ListProfileComponent } from './components/list-profile/list-profile.component';
+// import { DetailProfileComponent } from './components/detail-profile/detail-profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ListProfileComponent,
-    DetailProfileComponent
+    // ListProfileComponent,
+    // DetailProfileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ListProfileComponent,
-    DetailProfileComponent
+    // ListProfileComponent,
+    // DetailProfileComponent
 
   ],
   providers: [],
