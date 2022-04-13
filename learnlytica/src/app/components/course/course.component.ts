@@ -16,6 +16,8 @@ export class CourseComponent implements OnInit {
   constructor(private myConfig: ConfigService) { }
 
   ngOnInit(): void {
+    this.imgUrl = `https://dz8fbjd9gwp2s.cloudfront.net/courses/${this.imgid}/${this.imgid}_scaled_cover.jpg?v=1`;
+   
     // this.imgUrl = `https://dz8fbjd9gwp2s.cloudfront.net/courses/${this.imgid}/${this.imgid}_scaled_cover.jpg?v=1`;
   
     // this.imgUrl = `https://dz8fbjd9gwp2s.cloudfront.net/courses/${this.imgid}/${this.imgid}_scaled_cover.jpg?v=1`;
@@ -23,10 +25,10 @@ export class CourseComponent implements OnInit {
     // console.log('Iam in cource child componen')
     // console.log(this.configs)
     
-     this.myConfig.getCourseConfigs().subscribe(
-       (data) => {
-         console.log(data)
-       });
+    //  this.myConfig.getCourseConfigs().subscribe(
+    //    (data) => {
+    //      console.log(data)
+    //    });
 
   }
 }
