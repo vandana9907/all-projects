@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { CoursesComponent } from './components/courses/courses.component';
-import { ListCourseComponent } from './components/list-course/list-course.component';
+import { MycourseComponent } from './components/mycourse/mycourse.component';
+import { ListcoursesComponent } from './components/listcourses/listcourses.component';
+
 
 
 
@@ -15,7 +17,9 @@ import { ListCourseComponent } from './components/list-course/list-course.compon
     AppComponent,
     HeaderComponent,
     CoursesComponent,
-    ListCourseComponent,
+    MycourseComponent,
+    ListcoursesComponent,
+  
     
     
   ],
