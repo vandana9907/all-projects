@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { pipe, tap } from 'rxjs';
 import { UserService } from '../services/user.service';
 
 @Component({
@@ -14,10 +15,38 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.userdata = this.user.getUserProfile();
+  
+    this.userdata
 
-    this.userdata.subscribe( (data: any) => { this.mydata = data } );
+    .pipe(
 
+
+
+      tap((userList: any) => {
+
+        return userList.map(
+
+
+
+          (element: any, index: number, arr: any) => {
+
+            element['title'] = 'thbs';
+
+            element['name'] = "Mr/Ms." + element['name'];
+
+            return element
+
+
+
+          })//closing of element
+
+
+
+      })//closing of tap
+
+    )
+    .subscribe((data: any) => { this.mydata = data });
 
   }
-
 }
+

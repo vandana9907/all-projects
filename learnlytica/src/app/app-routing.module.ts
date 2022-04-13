@@ -6,6 +6,7 @@ import { ListProfilsComponent } from './components/list-profils/list-profils.com
 import { LoginComponent } from './components/login/login.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { ServicesComponent } from './components/services/services.component';
+import { TemplateFormComponent } from './components/template-form/template-form.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path:'registration',component:RegistrationComponent},
   { path : 'profiles',component:ListProfilsComponent},
   { path : 'rxjs',component:RegistrationComponent},
+  { path : 'template-form',component:TemplateFormComponent},
   { path:'**' , component:NotFoundComponent},
 
 ];

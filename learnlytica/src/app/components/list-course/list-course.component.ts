@@ -7,6 +7,7 @@ import { ConfigService } from 'src/app/services/config.service';
 })
 export class ListCourseComponent implements OnInit {
 myCourse :any;
+myTitle : string = 'thbs';
   constructor(private mConfig: ConfigService) { }
   getCourseList() {
   }
