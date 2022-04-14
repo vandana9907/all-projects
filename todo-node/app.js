@@ -4,7 +4,7 @@ const hostname = '127.0.0.1';
 const port = 3000;
 const webServer = http.createServer(
     (req, res) => {
-        console.log(process.env.NAME)
+        console.log(process.env.BATCH)
         // console.log(req.headers);
         console.log("=======");
         res.statusCode = 200;
