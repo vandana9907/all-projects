@@ -1,9 +1,11 @@
+require('dotenv').config();
 const http = require('http');
 const hostname = '127.0.0.1';
 const port = 3000;
 const webServer = http.createServer(
     (req, res) => {
-        console.log(req.headers);
+        console.log(process.env.NAME)
+        // console.log(req.headers);
         console.log("=======");
         res.statusCode = 200;
         res.setHeader('Content-type', 'text/plain');
