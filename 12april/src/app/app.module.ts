@@ -7,7 +7,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { CoursesComponent } from './components/courses/courses.component';
 import { MycourseComponent } from './components/mycourse/mycourse.component';
-import { ListcoursesComponent } from './components/listcourses/listcourses.component';
+// import { ListcoursesComponent } from './components/listcourses/listcourses.component';
+import { LoginComponent } from './components/login/login.component';
+import { CategoriesComponent } from './components/categories/categories.component';
+import { MaincontainerComponent } from './components/maincontainer/maincontainer.component';
+// import { ServicesComponent } from './components/services/services.component';
 
 
 
@@ -18,7 +22,12 @@ import { ListcoursesComponent } from './components/listcourses/listcourses.compo
     HeaderComponent,
     CoursesComponent,
     MycourseComponent,
-    ListcoursesComponent,
+    // ListcoursesComponent,
+    LoginComponent,
+    CategoriesComponent,
+    MaincontainerComponent,
+    // ServicesComponent,
+    
   
     
     

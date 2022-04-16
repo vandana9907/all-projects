@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-courses',
@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./courses.component.css']
 })
 export class CoursesComponent implements OnInit {
+  @Input() configs: any;
 
   constructor() { }
 
   ngOnInit(): void {
+    console.log('Iam in cource child componen')
+      console.log(this.configs)
+
+      // this.configs.getCourseConfigs().subscribe(
+      //       (data: any) => {
+      //       console.log(data)
+      //      });
+  }
+ 
   }
 
-}
+

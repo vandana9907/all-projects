@@ -1,9 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ListcoursesComponent } from './components/listcourses/listcourses.component';
+import { LoginComponent } from './components/login/login.component';
+
+
 
 const routes: Routes = [
-  {path:'mycourse', component : ListcoursesComponent},
+  // {path:'mycourse', component : ListcoursesComponent},
+  // {path:'services', component : ServicesComponent},
+  { path: 'login',component: LoginComponent},
+  
+
   
   
 ];
