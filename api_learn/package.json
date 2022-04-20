@@ -1,0 +1,16 @@
+{
+  "name": "api_learn",
+  "version": "1.0.0",
+  "description": "this is demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "thbs",
+  "license": "ISC",
+  "dependencies": {
+    "my": "^0.3.3",
+    "mysql2": "^2.3.3",
+    "sql": "^0.78.0"
+  }
+}
