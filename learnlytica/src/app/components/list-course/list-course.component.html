@@ -2,6 +2,19 @@
 
 <div class="row">
     <div class="col" *ngFor="let course of myCourse?.['sub-home'].data">
+
+        <div *ngFor="let user of userList">
+
+            {{user | json}}
+        
+        </div>
+
+
+        <div *ngFor="let user of myUserList$ | async; index as i">
+
+            <h2>{{user.username}} - {{user.email}}</h2>
+        
+        </div>
          <!-- {{course._id | json}}  -->
         <app-course [imgid]="course._id" [configs]="course['spayee:resource']">
 
