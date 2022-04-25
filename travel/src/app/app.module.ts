@@ -17,7 +17,7 @@ import { TrainComponent } from './train/train.component';
     TrainComponent
   ],
   imports: [
-    BrowserModule,
+BrowserModule,
     AppRoutingModule
   ],
   providers: [],
