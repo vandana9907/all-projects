@@ -1,0 +1,32 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialExampleModule } from 'src/materials/materials.module';
+import { FlightsComponent } from './components/flights/flights.component';
+import { Flights1Component } from './components/flights1/flights1.component';
+import { Flights2Component } from './components/flights2/flights2.component';
+import { Flights3Component } from './components/flights3/flights3.component';
+import { Flights4Component } from './components/flights4/flights4.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    FlightsComponent,
+    Flights1Component,
+    Flights2Component,
+    Flights3Component,
+    Flights4Component
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialExampleModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
